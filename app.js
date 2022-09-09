@@ -74,3 +74,16 @@ app.get("/users",(req,res)=>
 //         res.send(rows)
 //     })
 // })
+
+
+app.get("/jagan",(req,res)=>
+{
+    
+    database.query('delete from users Where id=?',[req.query.id],(err,rows,fields)=>
+    {
+        if(err)
+        console.log(err)
+        else
+        res.send(rows)
+    })
+})
