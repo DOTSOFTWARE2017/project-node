@@ -60,7 +60,7 @@ app.get("/users",(req,res)=>
 //         else
 //         res.send(rows)
 //     })
-// })xgfxfgxfgf
+// })
 
 
 // app.get("/jagan",(req,res)=>
